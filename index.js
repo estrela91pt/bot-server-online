@@ -41,7 +41,7 @@ async function updateStatus() {
       wasServerOnline = true;
       const channel = await client.channels.fetch(STATUS_CHANNEL_ID);
       if (channel) {
-        channel.send('🟢 **Contagion X** server is now online!');
+        channel.send(' <@&1392542033570173100>🟢 **Contagion X** server is now online!');
       }
     }
   } catch (error) {
