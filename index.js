@@ -7,8 +7,8 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 const SERVER_IP = '185.125.205.111';
 const SERVER_PORT = 2303;
 
-function getRandomFakeBoost(min = 3, max = 10) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomFakeBoost(min = 0, max = 0) {
+  return Math.floor(Math.random() * (max - min + 0)) + min;
 }
 
 async function updateStatus() {
