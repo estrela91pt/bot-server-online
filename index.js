@@ -13,7 +13,7 @@ let wasServerOnline = false; // previous server status
 
 const STATUS_CHANNEL_ID = '1400925423499477115'; // 👈 Replace with the ID of your Discord channel
 
-function getRandomFakeBoost(min = 3, max = 10) {
+function getRandomFakeBoost(min = 1, max = 2) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
