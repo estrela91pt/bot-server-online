@@ -54,7 +54,7 @@ async function updateStatus() {
 client.once('ready', () => {
   console.log(`Bot online as ${client.user.tag}`);
   updateStatus();
-  setInterval(updateStatus, 5 * 60 * 1000); // update every 5 minutes
+  setInterval(updateStatus, 15 * 1000); // a cada 15 segundos
 });
 
 client.login(process.env.DISCORD_TOKEN);
